@@ -13,7 +13,7 @@ def run(inde=[1,2,3,4],depe=[2,4,6,8]):
 
   #functions and operations
   
-  linear_model = W*x + b + M*x*x*x*x*x*10**-100
+  linear_model = W*x + b + M*x*x*10**-1
   #linear_model = M*tf.square(x) + W*x + b + 5
   squared_deltas = tf.square(linear_model - y)
   loss = tf.reduce_sum(squared_deltas)
